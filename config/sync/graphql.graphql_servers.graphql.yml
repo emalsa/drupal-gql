@@ -1,0 +1,19 @@
+uuid: 3d09290f-f36e-4c24-8919-4210ae2ed084
+langcode: en
+status: true
+dependencies: {  }
+name: graphql
+label: Graphql
+endpoint: /graphql
+debug_flag: 0
+schema: composable
+caching: true
+batching: true
+disable_introspection: false
+query_depth: null
+query_complexity: null
+schema_configuration:
+  composable:
+    extensions:
+      composable_extension: composable_extension
+persisted_queries_settings: {  }
