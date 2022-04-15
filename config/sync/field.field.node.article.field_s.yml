@@ -1,0 +1,23 @@
+uuid: 28dc327d-1bf1-4127-a6e8-e88efbde74f7
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_s
+    - node.type.article
+id: node.article.field_s
+field_name: field_s
+entity_type: node
+bundle: article
+label: s
+description: ''
+required: false
+translatable: false
+default_value:
+  -
+    value: 0
+default_value_callback: ''
+settings:
+  on_label: 'On'
+  off_label: 'Off'
+field_type: boolean

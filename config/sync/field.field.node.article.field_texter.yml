@@ -1,0 +1,21 @@
+uuid: f33e0667-8bbb-4228-90d6-8950ef7fcb4b
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_texter
+    - node.type.article
+  module:
+    - text
+id: node.article.field_texter
+field_name: field_texter
+entity_type: node
+bundle: article
+label: texter
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: text

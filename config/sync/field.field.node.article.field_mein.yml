@@ -1,0 +1,19 @@
+uuid: 75ddc1c9-8b11-4ea1-80dc-d8b381ee1ca0
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_mein
+    - node.type.article
+id: node.article.field_mein
+field_name: field_mein
+entity_type: node
+bundle: article
+label: mein
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string_long

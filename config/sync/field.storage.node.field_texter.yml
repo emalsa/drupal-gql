@@ -1,0 +1,20 @@
+uuid: cd47c397-75ab-454b-9215-a2c312c4d7f6
+langcode: en
+status: true
+dependencies:
+  module:
+    - node
+    - text
+id: node.field_texter
+field_name: field_texter
+entity_type: node
+type: text
+settings:
+  max_length: 255
+module: text
+locked: false
+cardinality: 1
+translatable: true
+indexes: {  }
+persist_with_no_fields: false
+custom_storage: false
