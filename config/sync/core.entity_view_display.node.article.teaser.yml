@@ -8,6 +8,7 @@ dependencies:
     - field.field.node.article.comment
     - field.field.node.article.field_image
     - field.field.node.article.field_mein
+    - field.field.node.article.field_num
     - field.field.node.article.field_s
     - field.field.node.article.field_tags
     - field.field.node.article.field_texter
@@ -64,6 +65,7 @@ hidden:
   comment: true
   field_image: true
   field_mein: true
+  field_num: true
   field_s: true
   field_tags: true
   field_texter: true

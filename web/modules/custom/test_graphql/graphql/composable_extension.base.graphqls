@@ -10,6 +10,7 @@ type Article {
   texter: String
   wer: String
   s: Boolean
+  num: Int
 }
 
 type ArticleResponse implements Response {

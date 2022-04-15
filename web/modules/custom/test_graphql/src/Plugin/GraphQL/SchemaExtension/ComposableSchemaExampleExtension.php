@@ -79,6 +79,12 @@ class ComposableSchemaExampleExtension extends SdlSchemaExtensionPluginBase {
       })
     );
 
+    $registry->addFieldResolver('Article', 'num',
+      $builder->callback(function ($entity) {
+        return $entity->get('field_num')->value;
+      })
+    );
+
     $registry->addFieldResolver('Article', 'body',
       $builder->callback(function ($entity) {
         return $entity->body->value;

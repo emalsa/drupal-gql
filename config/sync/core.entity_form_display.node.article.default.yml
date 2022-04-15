@@ -7,6 +7,7 @@ dependencies:
     - field.field.node.article.comment
     - field.field.node.article.field_image
     - field.field.node.article.field_mein
+    - field.field.node.article.field_num
     - field.field.node.article.field_s
     - field.field.node.article.field_tags
     - field.field.node.article.field_texter
@@ -68,6 +69,13 @@ content:
     region: content
     settings:
       rows: 5
+      placeholder: ''
+    third_party_settings: {  }
+  field_num:
+    type: number
+    weight: 125
+    region: content
+    settings:
       placeholder: ''
     third_party_settings: {  }
   field_s:

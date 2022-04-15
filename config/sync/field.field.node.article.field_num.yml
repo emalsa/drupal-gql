@@ -1,0 +1,23 @@
+uuid: f9deac3a-9d87-4d39-bac0-429a1170a368
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_num
+    - node.type.article
+id: node.article.field_num
+field_name: field_num
+entity_type: node
+bundle: article
+label: num
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  min: null
+  max: null
+  prefix: ''
+  suffix: ''
+field_type: integer

@@ -6,8 +6,8 @@ dependencies:
     - filter.format.restricted_html
   module:
     - comment
-    - contact
     - filter
+    - graphql
     - search
     - system
 _core:
@@ -19,6 +19,7 @@ is_admin: false
 permissions:
   - 'access comments'
   - 'access content'
-  - 'access site-wide contact form'
+  - 'execute graphql arbitrary graphql requests'
+  - 'execute graphql persisted graphql requests'
   - 'search content'
   - 'use text format restricted_html'
