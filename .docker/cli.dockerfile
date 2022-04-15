@@ -6,8 +6,11 @@ RUN apt-get update && apt-get install -y libmcrypt-dev \
     cron \
     nano \
     supervisor \
+    libzip-dev \
+    zlib1g-dev \
     && docker-php-ext-install pdo_mysql \
-    && docker-php-ext-install sockets
+    && docker-php-ext-install sockets \
+    && docker-php-ext-install zip
 
 RUN apt update \
     && apt-get install -y libfreetype6-dev libjpeg62-turbo-dev libpng-dev \
