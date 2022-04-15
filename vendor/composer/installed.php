@@ -223,6 +223,15 @@
                 0 => '9.3.11',
             ),
         ),
+        'drupal/admin_toolbar' => array(
+            'pretty_version' => '3.1.0',
+            'version' => '3.1.0.0',
+            'type' => 'drupal-module',
+            'install_path' => __DIR__ . '/../../web/modules/contrib/admin_toolbar',
+            'aliases' => array(),
+            'reference' => '3.1.0',
+            'dev_requirement' => false,
+        ),
         'drupal/aggregator' => array(
             'dev_requirement' => false,
             'replaced' => array(
