@@ -1,16 +1,27 @@
 uuid: 91a0f87f-4341-4f17-a7c7-adbe13967578
 langcode: en
-status: true
+status: false
 dependencies:
   config:
     - core.entity_view_mode.node.rss
     - field.field.node.article.body
     - field.field.node.article.comment
     - field.field.node.article.field_image
+    - field.field.node.article.field_mein
+    - field.field.node.article.field_s
     - field.field.node.article.field_tags
+    - field.field.node.article.field_texter
+    - field.field.node.article.field_wer
     - node.type.article
   module:
+    - field_layout
+    - layout_discovery
     - user
+third_party_settings:
+  field_layout:
+    id: layout_onecol
+    settings:
+      label: ''
 _core:
   default_config_hash: 2rIr6K5Q0UQ9khg0zE_CK-PtJH76UL-BDDZcZnZzwCc
 id: node.article.rss
@@ -25,4 +36,8 @@ hidden:
   body: true
   comment: true
   field_image: true
+  field_mein: true
+  field_s: true
   field_tags: true
+  field_texter: true
+  field_wer: true

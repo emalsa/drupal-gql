@@ -1,19 +1,30 @@
 uuid: 0087cb77-2e75-4df1-8ff0-6615e62afe66
 langcode: en
-status: true
+status: false
 dependencies:
   config:
     - core.entity_view_mode.node.teaser
     - field.field.node.article.body
     - field.field.node.article.comment
     - field.field.node.article.field_image
+    - field.field.node.article.field_mein
+    - field.field.node.article.field_s
     - field.field.node.article.field_tags
+    - field.field.node.article.field_texter
+    - field.field.node.article.field_wer
     - image.style.medium
     - node.type.article
   module:
+    - field_layout
     - image
+    - layout_discovery
     - text
     - user
+third_party_settings:
+  field_layout:
+    id: layout_onecol
+    settings:
+      label: ''
 _core:
   default_config_hash: 0ur5-yZyR8pJ3lugC_Micbr6V_tpMWz-yHFhtuLcZo8
 id: node.article.teaser
@@ -52,4 +63,8 @@ content:
 hidden:
   comment: true
   field_image: true
+  field_mein: true
+  field_s: true
   field_tags: true
+  field_texter: true
+  field_wer: true

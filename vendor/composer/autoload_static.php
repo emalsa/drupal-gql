@@ -133,6 +133,7 @@ class ComposerStaticInit4f71d1cc23d8fd53295afe2d92a3030a
         'D' => 
         array (
             'Drush\\' => 6,
+            'Drupal\\redis\\' => 13,
             'Drupal\\Driver\\' => 14,
             'Drupal\\Core\\' => 12,
             'Drupal\\Composer\\Plugin\\Scaffold\\' => 32,
@@ -404,6 +405,10 @@ class ComposerStaticInit4f71d1cc23d8fd53295afe2d92a3030a
         'Drush\\' => 
         array (
             0 => __DIR__ . '/..' . '/drush/drush/src',
+        ),
+        'Drupal\\redis\\' => 
+        array (
+            0 => __DIR__ . '/../..' . '/web/modules/contrib/redis/src',
         ),
         'Drupal\\Driver\\' => 
         array (

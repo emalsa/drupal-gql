@@ -6,6 +6,10 @@ type Article {
   id: Int!
   title: String!
   author: String
+  body: String
+  texter: String
+  wer: String
+  s: Boolean
 }
 
 type ArticleResponse implements Response {

@@ -1,13 +1,13 @@
 <?php
 
-namespace Drupal\graphql_composable\Plugin\GraphQL\Schema;
+namespace Drupal\test_graphql\Plugin\GraphQL\Schema;
 
 use Drupal\graphql\Plugin\GraphQL\Schema\ComposableSchema;
 
 /**
  * @Schema(
  *   id = "composable",
- *   name = "Composable Example schema",
+ *   name = "Custom Composable Example schema",
  *   extensions = "composable",
  * )
  */

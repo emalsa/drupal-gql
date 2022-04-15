@@ -7,3 +7,87 @@ definitions:
     weight: 0
     expanded: false
     enabled: true
+  admin_toolbar_tools__flush:
+    weight: -97
+    menu_name: admin
+    parent: admin_toolbar_tools.help
+    expanded: false
+    enabled: true
+  system__run_cron:
+    weight: -96
+    menu_name: admin
+    parent: admin_toolbar_tools.help
+    expanded: false
+    enabled: true
+  system__db_update:
+    weight: -95
+    menu_name: admin
+    parent: admin_toolbar_tools.help
+    expanded: false
+    enabled: true
+  'admin_toolbar_tools__extra_links:user__logout':
+    weight: -94
+    menu_name: admin
+    parent: admin_toolbar_tools.help
+    expanded: false
+    enabled: true
+  admin_toolbar_tools__help:
+    weight: -98
+    menu_name: admin
+    parent: system.admin
+    enabled: true
+    expanded: false
+  system__admin_index:
+    weight: -98
+    menu_name: admin
+    parent: admin_toolbar_tools.help
+    expanded: false
+    enabled: true
+  system__admin_content:
+    weight: -96
+    menu_name: admin
+    parent: system.admin
+    expanded: false
+    enabled: true
+  system__admin_structure:
+    weight: -95
+    menu_name: admin
+    parent: system.admin
+    expanded: false
+    enabled: true
+  system__themes_page:
+    weight: -94
+    menu_name: admin
+    parent: system.admin
+    expanded: false
+    enabled: true
+  system__modules_list:
+    weight: -93
+    menu_name: admin
+    parent: system.admin
+    expanded: false
+    enabled: true
+  system__admin_config:
+    weight: -92
+    menu_name: admin
+    parent: system.admin
+    expanded: false
+    enabled: true
+  entity__user__collection:
+    weight: -91
+    menu_name: admin
+    parent: system.admin
+    expanded: false
+    enabled: true
+  system__admin_reports:
+    weight: -90
+    menu_name: admin
+    parent: system.admin
+    expanded: false
+    enabled: true
+  help__main:
+    weight: -89
+    menu_name: admin
+    parent: system.admin
+    expanded: false
+    enabled: true

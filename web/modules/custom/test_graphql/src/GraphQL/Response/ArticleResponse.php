@@ -1,6 +1,6 @@
 <?php
 
-namespace Drupal\graphql_composable\GraphQL\Response;
+namespace Drupal\test_graphql\GraphQL\Response;
 
 use Drupal\Core\Entity\EntityInterface;
 use Drupal\graphql\GraphQL\Response\Response;

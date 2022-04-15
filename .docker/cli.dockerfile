@@ -29,9 +29,9 @@ RUN curl -sS https://getcomposer.org/installer | php -- --version=2.3.5 --instal
 RUN pecl install redis && docker-php-ext-enable redis
 
 # XDebug
-RUN pecl install xdebug-3.1.4
-RUN docker-php-ext-enable xdebug
-COPY ./xdebug.ini ../../../usr/local/etc/php/conf.d/xdebug.ini
+#RUN pecl install xdebug-3.1.4
+#RUN docker-php-ext-enable xdebug
+#COPY ./xdebug.ini ../../../usr/local/etc/php/conf.d/xdebug.ini
 
 
 # Configure cron

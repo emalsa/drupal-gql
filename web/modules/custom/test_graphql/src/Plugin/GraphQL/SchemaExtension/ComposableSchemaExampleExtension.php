@@ -1,17 +1,17 @@
 <?php
 
-namespace Drupal\graphql_composable\Plugin\GraphQL\SchemaExtension;
+namespace Drupal\test_graphql\Plugin\GraphQL\SchemaExtension;
 
 use Drupal\graphql\GraphQL\ResolverBuilder;
 use Drupal\graphql\GraphQL\ResolverRegistryInterface;
 use Drupal\graphql\GraphQL\Response\ResponseInterface;
 use Drupal\graphql\Plugin\GraphQL\SchemaExtension\SdlSchemaExtensionPluginBase;
-use Drupal\graphql_composable\GraphQL\Response\ArticleResponse;
+use Drupal\test_graphql\GraphQL\Response\ArticleResponse;
 
 /**
  * @SchemaExtension(
  *   id = "composable_extension",
- *   name = "Composable Example extension",
+ *   name = "Custom Composable Example extension",
  *   description = "A simple extension that adds node related fields.",
  *   schema = "composable"
  * )
@@ -61,6 +61,30 @@ class ComposableSchemaExampleExtension extends SdlSchemaExtensionPluginBase {
       )
     );
 
+    $registry->addFieldResolver('Article', 'texter',
+      $builder->callback(function ($entity) {
+        return $entity->get('field_texter')->value;
+      })
+    );
+
+    $registry->addFieldResolver('Article', 'wer',
+      $builder->callback(function ($entity) {
+        return $entity->get('field_wer')->value;
+      })
+    );
+
+    $registry->addFieldResolver('Article', 's',
+      $builder->callback(function ($entity) {
+        return $entity->get('field_s')->value;
+      })
+    );
+
+    $registry->addFieldResolver('Article', 'body',
+      $builder->callback(function ($entity) {
+        return $entity->body->value;
+      })
+    );
+
     $registry->addFieldResolver('Article', 'author',
       $builder->compose(
         $builder->produce('entity_owner')
@@ -75,6 +99,8 @@ class ComposableSchemaExampleExtension extends SdlSchemaExtensionPluginBase {
       __CLASS__,
       'resolveResponse',
     ]);
+
+    $a = 1;
   }
 
   /**

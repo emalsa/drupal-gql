@@ -2,7 +2,7 @@
 
 declare(strict_types = 1);
 
-namespace Drupal\graphql_composable\Wrappers\Response;
+namespace Drupal\test_graphql\Wrappers\Response;
 
 use Drupal\Core\Entity\EntityInterface;
 use Drupal\graphql\GraphQL\Response\Response;

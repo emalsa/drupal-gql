@@ -850,6 +850,15 @@
             'reference' => NULL,
             'dev_requirement' => false,
         ),
+        'drupal/redis' => array(
+            'pretty_version' => '1.5.0',
+            'version' => '1.5.0.0',
+            'type' => 'drupal-module',
+            'install_path' => __DIR__ . '/../../web/modules/contrib/redis',
+            'aliases' => array(),
+            'reference' => '8.x-1.5',
+            'dev_requirement' => false,
+        ),
         'drupal/responsive_image' => array(
             'dev_requirement' => false,
             'replaced' => array(

@@ -7,7 +7,7 @@ label: Graphql
 endpoint: /graphql
 debug_flag: 0
 schema: composable
-caching: true
+caching: false
 batching: true
 disable_introspection: false
 query_depth: null
