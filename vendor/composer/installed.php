@@ -5,7 +5,7 @@
         'type' => 'project',
         'install_path' => __DIR__ . '/../../',
         'aliases' => array(),
-        'reference' => '70762bc8d098a1b67ec51597d34fe552609aee0e',
+        'reference' => '51afc22eb90551f97366ac7c313536f0493db07e',
         'name' => 'drupal/recommended-project',
         'dev' => true,
     ),
@@ -700,6 +700,24 @@
                 0 => '9.3.11',
             ),
         ),
+        'drupal/jwt' => array(
+            'pretty_version' => '1.0.0-rc2',
+            'version' => '1.0.0.0-RC2',
+            'type' => 'drupal-module',
+            'install_path' => __DIR__ . '/../../web/modules/contrib/jwt',
+            'aliases' => array(),
+            'reference' => '8.x-1.0-rc2',
+            'dev_requirement' => false,
+        ),
+        'drupal/key' => array(
+            'pretty_version' => '1.15.0',
+            'version' => '1.15.0.0',
+            'type' => 'drupal-module',
+            'install_path' => __DIR__ . '/../../web/modules/contrib/key',
+            'aliases' => array(),
+            'reference' => '8.x-1.15',
+            'dev_requirement' => false,
+        ),
         'drupal/language' => array(
             'dev_requirement' => false,
             'replaced' => array(
@@ -847,7 +865,7 @@
             'type' => 'project',
             'install_path' => __DIR__ . '/../../',
             'aliases' => array(),
-            'reference' => '70762bc8d098a1b67ec51597d34fe552609aee0e',
+            'reference' => '51afc22eb90551f97366ac7c313536f0493db07e',
             'dev_requirement' => false,
         ),
         'drupal/redis' => array(
@@ -1046,6 +1064,15 @@
             'install_path' => __DIR__ . '/../enlightn/security-checker',
             'aliases' => array(),
             'reference' => '196bacc76e7a72a63d0e1220926dbb190272db97',
+            'dev_requirement' => false,
+        ),
+        'firebase/php-jwt' => array(
+            'pretty_version' => 'v5.5.1',
+            'version' => '5.5.1.0',
+            'type' => 'library',
+            'install_path' => __DIR__ . '/../firebase/php-jwt',
+            'aliases' => array(),
+            'reference' => '83b609028194aa042ea33b5af2d41a7427de80e6',
             'dev_requirement' => false,
         ),
         'grasmash/expander' => array(

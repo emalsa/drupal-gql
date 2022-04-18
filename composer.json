@@ -22,6 +22,7 @@
         "drupal/core-project-message": "^9.3",
         "drupal/core-recommended": "^9.3",
         "drupal/graphql": "^4",
+        "drupal/jwt": "^1.0@RC",
         "drupal/pathauto": "^1.9",
         "drupal/redis": "^1.5",
         "drupal/typed_data": "^1.0@beta",

@@ -31,6 +31,14 @@ class ComposableSchemaExampleExtension extends SdlSchemaExtensionPluginBase {
         ->map('id', $builder->fromArgument('id'))
     );
 
+    $registry->addFieldResolver('Query', 'articles',
+      $builder->produce('entity_load_multiple')
+        ->map('type', $builder->fromValue('node'))
+        ->map('bundles', $builder->fromValue(['article']))
+        ->map('ids', $builder->fromArgument('ids'))
+    );
+
+
     // Create article mutation.
     $registry->addFieldResolver('Mutation', 'createArticle',
       $builder->produce('create_article')

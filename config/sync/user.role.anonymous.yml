@@ -4,10 +4,11 @@ status: true
 dependencies:
   config:
     - filter.format.restricted_html
+    - node.type.article
   module:
     - comment
     - filter
-    - graphql
+    - node
     - search
     - system
 _core:
@@ -19,7 +20,6 @@ is_admin: false
 permissions:
   - 'access comments'
   - 'access content'
-  - 'execute graphql arbitrary graphql requests'
-  - 'execute graphql persisted graphql requests'
+  - 'create article content'
   - 'search content'
   - 'use text format restricted_html'

@@ -125,6 +125,10 @@ class ComposerStaticIniteb30aa1dbbc78100010fe2c1d354e7fd
             'Grasmash\\Expander\\' => 18,
             'GraphQL\\' => 8,
         ),
+        'F' => 
+        array (
+            'Firebase\\JWT\\' => 13,
+        ),
         'E' => 
         array (
             'Enlightn\\SecurityChecker\\' => 25,
@@ -393,6 +397,10 @@ class ComposerStaticIniteb30aa1dbbc78100010fe2c1d354e7fd
         'GraphQL\\' => 
         array (
             0 => __DIR__ . '/..' . '/webonyx/graphql-php/src',
+        ),
+        'Firebase\\JWT\\' => 
+        array (
+            0 => __DIR__ . '/..' . '/firebase/php-jwt/src',
         ),
         'Enlightn\\SecurityChecker\\' => 
         array (

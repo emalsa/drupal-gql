@@ -145,6 +145,7 @@ class EntityLoadMultiple extends DataProducerPluginBase implements ContainerFact
    */
   public function resolve($type, array $ids, ?string $language, ?array $bundles, bool $access, ?AccountInterface $accessUser, ?string $accessOperation, FieldContext $context) {
     // Remove any NULL IDs.
+    \Drupal::logger('tt')->error(implode(',',$ids));
     $ids = array_filter($ids);
 
     $resolver = $this->entityBuffer->add($type, $ids);

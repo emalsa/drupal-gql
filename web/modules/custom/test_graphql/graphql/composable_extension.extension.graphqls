@@ -1,5 +1,6 @@
 extend type Query {
   article(id: Int!): Article
+  articles(ids: [Int]): [Article]
 }
 
 extend type Mutation {

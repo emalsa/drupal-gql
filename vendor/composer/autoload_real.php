@@ -33,7 +33,7 @@ class ComposerAutoloaderIniteb30aa1dbbc78100010fe2c1d354e7fd
         set_include_path(implode(PATH_SEPARATOR, $includePaths));
 
         require __DIR__ . '/autoload_static.php';
-        call_user_func(\Composer\Autoload\ComposerStaticIniteb30aa1dbbc78100010fe2c1d354e7fd::getInitializer($loader));
+        \Composer\Autoload\ComposerStaticIniteb30aa1dbbc78100010fe2c1d354e7fd::getInitializer($loader)();
 
         $loader->register(true);
 
