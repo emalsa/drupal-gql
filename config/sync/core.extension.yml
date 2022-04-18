@@ -26,6 +26,10 @@ module:
   help: 0
   image: 0
   jsonapi: 0
+  jwt: 0
+  jwt_auth_consumer: 0
+  jwt_auth_issuer: 0
+  key: 0
   layout_discovery: 0
   link: 0
   menu_link_content: 0
